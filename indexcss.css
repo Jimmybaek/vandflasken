@@ -14,7 +14,7 @@ body {background-color: #746A6A;
 	background-color: #CF763E;
 	height: 300px;
 	position: relative;
-	margin-right: 10px;
+	
 	
 }
 
@@ -31,7 +31,7 @@ body {background-color: #746A6A;
 	background-color: #5792C0;
 	height: 300px;
 	position: relative;
-	margin-left: 10px;
+	
 }
 
 .billede3 {
@@ -118,7 +118,7 @@ body {background-color: #746A6A;
 
 .andensek {
 	grid-column: 2 / span 5 ;
-	
+	margin-right: 10px;
 	
 }
 
@@ -129,7 +129,7 @@ body {background-color: #746A6A;
 
 .tredjesek {
 	grid-column: 7 / span 5;
-	
+	margin-left: 10px;
 }
 
 
