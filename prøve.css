@@ -51,7 +51,7 @@ body {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(8, [col-start] 1fr) ;
+	grid-template-columns: repeat(12, [col-start] 1fr) ;
 	
 	
 }
