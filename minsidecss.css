@@ -1,5 +1,7 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 /* CSS Document */
+
+/* Mobil version starter */
 
 body {
 	background-color: #746A6A;
@@ -46,3 +48,57 @@ th, td {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/* Desktop version starter */  
+
+
+@media (min-width: 700px) {
+ 
+	article{
+		display: grid;
+		grid-template-rows: none;
+		grid-template-columns: 12; 
+	}
+
+.tabel1 {
+    grid-column: col-start 2 / span 4;
+	grid-row: 3 / 5;
+  }
+
+.tabel2 {
+    grid-column: col-start 6 / span 3;
+	grid-row: 3 / 4; 
+  }
+
+.tabel3 {
+    grid-column: col-start 9 / span 3;
+	grid-row: 3 / 4;
+  }
+
+.tabel4 {
+    grid-column: col-start 6 / span 3;
+	grid-row: 4 / 5;
+  }
+
+.tabel5 {
+    grid-column: col-start 9 / span 3;
+	grid-row: 4 / 5;
+  }
+
+.tabel6 {
+    grid-column: col-start 2 / span 4;
+	grid-row: 5 / 6;
+	
+  }
+	
+.tabel6 tbody
+	{border-style: dotted;
+	
+	}
+	
+.active {
+  background-color: black;
+  color: white;
+}
+	
+	
