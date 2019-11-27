@@ -3,45 +3,78 @@
 /* CSS Document */
 
 
+	.sidesection {
+	min-height: calc(100vh - 47px - 111px - 38px);
+	
+}
+
+ .img1 {
+	 
+	display: none;
+	}
+
+.formsec {
+
+	
+}
+
+.formsec p {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.knapsec {
+	
+	text-align: center;
+	
+	margin-bottom: 30px;
+}
+
+
+
 input[type=text]{
- 
 	background-color: lightgray;
     color: black;
 	border: none;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	font-size: 22px;
 	text-align: justify;
+	width: 50%;	
 	
-		
-	
+}
+
+.formsec {
+	text-align: center;
+}
+
+.knapsec {
+	margin-top: 50px;
 }
 
 p {text-align: 
 	center;
+	margin-left: 60%;
     font-size: 20px;
-	color: white
+	color: white;
 }
+
 body {background-color: #746A6A}
 
 input[type=password]{
+	
 	background-color: lightgray;
     color: black;
 	border: none;
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
-	display: block;
-	font-size: 25px;	
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 25px;
+	width: 50%;	
 	
 }
 .knap {
+	
 	Padding:10px;
 	background-color: #383434;
 	border-radius: 50px;
@@ -49,15 +82,78 @@ input[type=password]{
 	color:white;
 	text-decoration: none;
 	text-align: center;
-	display: block;
-	margin-top: 2em;
 	font-size: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20%;
-	margin-top: 5%;
 }
 
 form {
 	padding-top: 50px;
+}
+
+.app {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+}
+
+@media screen and (min-width: 600px){
+
+	.sidesection {
+	min-height: calc(100vh - 47px - 171px - 38px);
+	grid-column: col-start / span 12;
+	display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+	
+}
+	
+ .img1 {
+	 display:block;
+	 width: 300px;
+	 margin-top: 20%;
+	}
+	
+	.formsec {
+	grid-column: 8 / span 3;
+	
+}
+
+
+.imgsec {
+	grid-column: 3 / span 3;
+	text-align: center;
+	
+}
+
+.knapsec {
+	grid-column: 8 / span 3;
+	text-align: center;
+	margin-top:-50%;
+	
+}
+	
+.knap:hover {
+	background-color: #A2A2A2;
+}
+	
+input[type=text]{
+
+	width: 100%;	
+}
+	
+input[type=password]{
+	
+	width: 100%;	
+	
+}
+
+	.appsec {
+		grid-column: 8 / span 3;
+		margin-top: -30%;
+	}
+	
+	.app {
+		width:100%;
+	}
+	
+	
 }
