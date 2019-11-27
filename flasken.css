@@ -1,72 +1,195 @@
-@charset "UTF-8";
-/* CSS Document */
 
-
-.sek4 {
-	background-color: #746A6A; /*farven i baggrunden er grå */ 
-	text-align: center; /*centere teksten i midten */
-	color:white;
-	padding-bottom: 2em; /*fyld under teksten er 2em */
-	padding-top: 2em; /*fyld over teksten er 2em*/ 
-  	position: relative;
+body {
+	background-color: #746A6A;
 }
-
-
-.tekst {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-	
-
-
-.flaskebil1 {
-	display: block; /* fremviser et element som en blok. Dvs. den går ned på ny linje og optager hele den nye linje */
-	margin-left: auto; /*auto placerer elementet vandret og centreret inde i den blok den befinder sig i */ 
+.flaskesidebil {
+	display: block;
+	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
 }
+
 
 .sek5 {
-	background-color: #009FB9;
+	text-align: center;
+	background-color: #CF763E;
 	color: white;
-	padding-bottom: 2em;
-	padding-top: 2em;
-	
+	padding-bottom: 20px;
 	
 }
-
-.overskrifter{
+.sek6 {
 	text-align: center;
 }
 
-.beskrivelse {
-	margin-right: 2em;
-	margin-left: 2em;
+.flaskebillede {
+	width: 100px;
+	
 }
 
 .sek6 {
-	background-color: #A2A2A2;
-	color: white;
-	padding-bottom: 2em;
-	padding-top: 2em;
+	text-align: center;
+	background-color:#A2A2A2;
+	padding-bottom: 20px;
 }
 
 .patronbill {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100px;
 }
 
 .sek7 {
+	text-align: center;
 	background-color: black;
-	color:white;
-	padding-bottom: 2em;
-	padding-top: 2em;
+	color: white;
+	padding-bottom: 20px;
 }
 
-.fingerlas {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.sek8 {
+		text-align: center;
+	background-color:#53BEF4;
+	padding-bottom: 20px;
+}
+
+.beskrivelse {
+	
+	margin-right: 20%;
+	margin-left:20%;
+}
+
+
+
+/** desktop version-------------------------------------*/
+@media screen and (min-width: 600px){
+
+.sek4 {
+	grid-column: 2/ span 10;
+	
+}	
+
+
+	.beskrivelse {
+		margin: 0px;
+		width:100%;
+	}
+	
+	.beskrivelse p {
+		text-align: left;
+	}
+
+.sek5 {
+	
+		height:400px;
+		padding:20px;
+		grid-column: 2 / span 5;
+		display: grid;
+		grid-template-columns: repeat(5, [col-start] 1fr);
+		grid-template-rows: 10% 80% 10%;
+		margin-right: 15px;
+	
+}
+	
+	.flaskeart {
+		grid-column: col-start / span 2;
+		grid-row: 2 / 3;
+		
+	}
+	
+	.flasketekst {
+		grid-column: 3 / span 3;
+		grid-row: 2 / 3;
+	}
+	
+	
+	
+.sek6 {
+		height:400px;
+		padding:20px;
+		grid-column: 7 / span 5;
+		display: grid;
+		grid-template-columns: repeat(5, [col-start] 1fr);
+		grid-template-rows: 10% 80% 10%;
+		margin-left: 15px;
+}
+
+		.patronbill {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		position: relative;
+		top:30%;
+	}
+	
+.patronart {
+		
+		grid-column: col-start / span 2;
+		grid-row: 2 / 3;
+	}
+	
+.patrontekst {
+	grid-column: 3 / span 3;
+	grid-row: 2 / 3;
+}
+
+.sek7 {
+		grid-column: 2 / span 6;
+		height:400px;
+		padding:20px;
+		display: grid;
+		grid-template-columns: repeat(6, [col-start] 1fr);
+		grid-template-rows: 10% 80% 10%;
+		margin-right: 15px;
+	
+}
+
+		.fingerlas {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		position: relative;
+		
+	}
+	
+.fingertekst {
+		
+		grid-column: col-start / span 3;
+		grid-row: 2 / 3;
+	
+	}
+	.fingertekst p {
+		margin-left: 20px;
+		text-align: center;
+	}
+	
+.fingerart{
+	grid-column: 4 / span 3;
+	grid-row: 2 / 3;
+}
+
+.sek8 {
+		
+		text-align: center;
+		grid-column: 8 / span 4;
+		height:400px;
+		padding:20px;
+		display: grid;
+		grid-template-columns: repeat(4, [col-start] 1fr);
+		grid-template-rows: 10% 80% 10%;
+		margin-left: 15px;
+		
+}
+	
+	.vitamintekst {
+	grid-column: col-start / span 4;
+	grid-row: 2 / 3;
+	}
+	
+	
+	.overskrifter {
+		text-align: center;
+	}
+	
+	.sek4, .sek5, .sek6, .sek7, .sek8 {
+		margin-bottom: 30px;
+		
+	}
+
 }
