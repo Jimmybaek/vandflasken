@@ -53,7 +53,7 @@ body {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(12, [col-start] 1fr) ;
+	grid-template-columns: repeat(12, [col-start] 1fr);
 	
 	
 }
@@ -90,13 +90,47 @@ body {
   background-color: #000;
 }
 
-/** main {
-	min-height: calc(100vh - 47px - 90px - 38px)
-} **/
+.facebookart {
+	grid-column: 8 / span 2;
+}
+
+.facebook{
+	width:70px;
+	
+}
+
+
+.insagramart {
+	grid-column: 10 / span 2;
+}
+.instagram {
+	width:70px;
+	
+}
+
 
 @media screen and (min-width: 600px){
 .logo {
 width: 250px;
 
 }
+	
+.facebookart {
+	grid-column: 10 / span 1;
+}
+
+.facebook{
+	width:100px;
+	
+}
+
+
+.insagramart {
+	grid-column: 11 / span 1;
+}
+.instagram {
+	width:100px;
+	
+}	
+
 }
