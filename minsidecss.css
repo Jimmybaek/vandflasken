@@ -1,5 +1,4 @@
- @charset "UTF-8";
-/* CSS Document */
+
 
 /* Mobil version starter */
 
@@ -96,9 +95,14 @@ th, td {
 	
 	}
 	
-.active {
-  background-color: black;
-  color: white;
+.facebookart {
+		margin-top:250px;
+	}
+	
+	.insagramart {
+		margin-top:250px;
+	}
+
 }
 	
 	
