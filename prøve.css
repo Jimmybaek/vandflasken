@@ -41,6 +41,7 @@ body {
 	margin-left:auto; /*begge margin auto så billedet er i midten*/
 	margin-right:auto;
 	margin-top: 20px;
+	margin-bottom: 20px;
 
 } 
 
@@ -136,6 +137,5 @@ width: 250px;
 	width:100px;
 	
 }	
-
 
 }
