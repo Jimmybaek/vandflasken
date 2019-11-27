@@ -36,9 +36,11 @@ body {
 
 /* styling af billedei i header */
 .logo {
+	width: 150px;
 	display: block;
 	margin-left:auto; /*begge margin auto så billedet er i midten*/
 	margin-right:auto;
+	margin-top: 20px;
 
 } 
 
@@ -91,3 +93,10 @@ body {
 /** main {
 	min-height: calc(100vh - 47px - 90px - 38px)
 } **/
+
+@media screen and (min-width: 600px){
+.logo {
+width: 250px;
+
+}
+}
